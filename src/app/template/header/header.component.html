@@ -1,0 +1,29 @@
+<mat-toolbar class="mat-elevation-z3 header">
+    <span>
+        <i class="material-icons">
+            <!-- {{ icon }} -->
+        </i>
+    </span>
+    <span>
+        <a>
+            <!-- {{ title }} -->
+        </a>
+    </span>
+    <div class="menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>home</mat-icon>
+                <a class="item" routerLink="/">Início</a>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>people</mat-icon>
+                <a class="item" routerLink="/listar">Login</a>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
